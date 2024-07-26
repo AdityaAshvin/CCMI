@@ -1,374 +1,525 @@
-Here's the formatted BibTeX entry for each of the publications from 2023 to 2015:
-
-```bibtex
-@inproceedings{Hebbar2023SEAR,
-  author = {Hebbar, Rajat and Bose, Digbalay and Narayanan, Shrikanth},
+@conference{nokey,
   title = {SEAR: Semantically-grounded Audio Representations},
-  booktitle = {ACM Multimedia},
+  author = {Rajat Hebbar and Digbalay Bose and Shrikanth Narayanan},
   year = {2023},
-  abbr = {ACM MM},
-  tags = {computational media understanding, multimodal, self-supervision}
+  date = {2023-10-29},
+  publisher = {ACM Multimedia},
+  keywords = {computational media understanding, multimodal, self-supervision},
+  pubstate = {published},
+  tppubtype = {conference},
+  abbr = {ACM MM}
 }
 
-@inproceedings{Bose2023MMAU,
-  author = {Bose, Digbalay and Hebbar, Rajat and Feng, Tiantian and Somandepalli, Krishna and Xu, Anfeng and Narayanan, Shrikanth},
+@conference{nokey,
   title = {MM-AU: Towards Multimodal Understanding of Advertisement Videos},
-  booktitle = {ACM Multimedia},
+  author = {Digbalay Bose and Rajat Hebbar and Tiantian Feng and Krishna Somandepalli and Anfeng Xu and Shrikanth Narayanan},
   year = {2023},
-  abbr = {ACM MM},
-  tags = {advertisements, computational media understanding, content analysis, multimedia understanding, multimodal}
+  date = {2023-10-29},
+  urldate = {2023-10-29},
+  publisher = {ACM Multimedia},
+  keywords = {advertisements, computational media understanding, content analysis, multimedia understanding, multimodal},
+  pubstate = {published},
+  tppubtype = {conference},
+  abbr = {ACM MM}
 }
 
-@article{Sharma2023AVAC,
-  author = {Sharma, Rahul and Narayanan, Shrikanth},
+@article{nokey,
   title = {Audio-Visual Activity Guided Cross-Modal Identity Association for Active Speaker Detection},
-  journal = {IEEE Open Journal of Signal Processing},
-  volume = {13},
-  number = {1},
-  pages = {225--232},
-  year = {2023},
+  author = {Rahul Sharma and Shrikanth Narayanan},
   doi = {10.1109/OJSP.2023.3267269},
-  tags = {active speaker localization, computational media understanding, cross-modal learning, multimedia understanding}
+  year = {2023},
+  date = {2023-04-14},
+  urldate = {2023-04-14},
+  journal = {IEEE Open Journal of Signal Processing},
+  pages = {225-232},
+  abstract = {Active speaker detection in videos addresses associating a source face, visible in the video frames, with the underlying speech in the audio modality. The two primary sources of information to derive such a speech-face relationship are i) visual activity and its interaction with the speech signal and ii) co-occurrences of speakers' identities across modalities in the form of face and speech. The two approaches have their limitations: the audio-visual activity models get confused with other frequently occurring vocal activities, such as laughing and chewing, while the speakers' identity-based methods are limited to videos having enough disambiguating information to establish a speech-face association. Since the two approaches are independent, we investigate their complementary nature in this work. We propose a novel unsupervised framework to guide the speakers' cross-modal identity association with the audio-visual activity for active speaker detection. Through experiments on entertainment media videos from two benchmark datasets–the AVA active speaker (movies) and Visual Person Clustering Dataset (TV shows)–we show that a simple late fusion of the two approaches enhances the active speaker detection performance.},
+  keywords = {active speaker localization, computational media understanding, cross-modal learning, multimedia understanding},
+  pubstate = {published},
+  tppubtype = {article}
 }
 
-@inproceedings{Bose2023ContextuallyRich,
-  author = {Bose, Digbalay and Hebbar, Rajat and Somandepalli, Krishna and Narayanan, Shrikanth},
+@conference{bose-etal-2023-emotion-recognition,
   title = {Contextually-rich human affect perception using multimodal scene information},
-  booktitle = {IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP)},
-  year = {2023},
-  abbr = {ICASSP},
+  author = {Digbalay Bose and Rajat Hebbar and Krishna Somandepalli and Shrikanth Narayanan},
   doi = {https://arxiv.org/abs/2303.06904},
-  tags = {emotion recognition, multimedia understanding, multimodal}
+  year = {2023},
+  date = {2023-03-13},
+  urldate = {2023-03-13},
+  publisher = {IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP)},
+  abstract = {The process of human affect understanding involves the ability to infer person specific emotional states from various sources including images, speech, and language. Affect perception from images has predominantly focused on expressions extracted from salient face crops. However, emotions perceived by humans rely on multiple contextual cues including social settings, foreground interactions, and ambient visual scenes. In this work, we leverage pretrained vision-language (VLN) models to extract descriptions of foreground context from images. Further, we propose a multimodal context fusion (MCF) module to combine foreground cues with the visual scene and person-based contextual information for emotion prediction. We show the effectiveness of our proposed modular design on two datasets associated with natural scenes and TV shows.},
+  keywords = {emotion recognition, multimedia understanding, multimodal},
+  pubstate = {published},
+  tppubtype = {conference},
+  abbr = {ICASSP}
 }
 
-@inproceedings{Avramidis2023VisualContext,
-  author = {Avramidis, Kleanthis and Stewart, Shanti and Narayanan, Shrikanth},
+@conference{avramidi-etal-vcmr,
   title = {On the Role of Visual Context in Enriching Music Representations},
-  booktitle = {IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP)},
-  year = {2023},
-  abbr = {ICASSP},
+  author = {Kleanthis Avramidis and Shanti Stewart and Shrikanth Narayanan},
   doi = {https://arxiv.org/abs/2210.15828},
-  tags = {multimedia understanding, multimodal, music representations}
+  year = {2023},
+  date = {2023-02-15},
+  urldate = {2023-02-15},
+  publisher = {IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP)},
+  abstract = {Human perception and experience of music is highly context-dependent. Contextual variability contributes to differences in how we interpret and interact with music, challenging the design of robust models for information retrieval. Incorporating multimodal context from diverse sources provides a promising approach toward modeling this variability. Music presented in media such as movies and music videos provide rich multimodal context that modulates underlying human experiences. However, such context modeling is underexplored, as it requires large amounts of multimodal data along with relevant annotations. Self-supervised learning can help address these challenges by automatically extracting rich, high-level correspondences between different modalities, hence alleviating the need for fine-grained annotations at scale. In this study, we propose VCMR -- Video-Conditioned Music Representations, a contrastive learning framework that learns music representations from audio and the accompanying music videos. The contextual visual information enhances representations of music audio, as evaluated on the downstream task of music tagging. Experimental results show that the proposed framework can contribute additive robustness to audio representations and indicates to what extent musical elements are affected or determined by visual context.},
+  keywords = {multimedia understanding, multimodal, music representations},
+  pubstate = {published},
+  tppubtype = {conference},
+  abbr = {ICASSP}
 }
 
-@inproceedings{Hebbar2023Dataset,
-  author = {Hebbar, Rajat and Bose, Digbalay and Somandepalli, Krishna and Vijai, Veena and Narayanan, Shrikanth},
+@conference{hebbar-2023-audio-events,
   title = {A dataset for Audio-Visual Sound Event Detection in Movies},
-  booktitle = {IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP)},
-  year = {2023},
-  abbr = {ICASSP},
+  author = {Rajat Hebbar and Digbalay Bose and Krishna Somandepalli and Veena Vijai and Shrikanth Narayanan},
   doi = {https://arxiv.org/abs/2302.07315},
-  tags = {audio-visual event detection, multimodal}
-}
-
-@inproceedings{Baruah2023Coreference,
-  author = {Baruah, Sabyasachee and Narayanan, Shrikanth},
-  title = {Character Coreference Resolution in Movie Screenplays},
-  booktitle = {Findings of the Association for Computational Linguistics: ACL},
-  pages = {10300--10313},
   year = {2023},
-  abbr = {ACL},
-  tags = {content analysis, coreference resolution, multimedia understanding}
+  date = {2023-02-14},
+  urldate = {2023-02-14},
+  publisher = {IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP)},
+  abstract = {Audio event detection is a widely studied audio processing task, with applications ranging from self-driving cars to healthcare. In-the-wild datasets such as Audioset have propelled research in this field. However, many efforts typically involve manual annotation and verification, which is expensive to perform at scale. Movies depict various real-life and fictional scenarios which makes them a rich resource for mining a wide-range of audio events. In this work, we present a dataset of audio events called Subtitle-Aligned Movie Sounds (SAM-S). We use publicly-available closed-caption transcripts to automatically mine over 110K audio events from 430 movies. We identify three dimensions to categorize audio events: sound, source, quality, and present the steps involved to produce a final taxonomy of 245 sounds. We discuss the choices involved in generating the taxonomy, and also highlight the human-centered nature of sounds in our dataset. We establish a baseline performance for audio-only sound classification of 34.76% mean average precision and show that incorporating visual information can further improve the performance by about 5%.},
+  keywords = {audio-visual event detection, multimodal},
+  pubstate = {published},
+  tppubtype = {conference},
+  abbr = {ICASSP}
 }
 
-@article{Greer2023MusicFeatures,
-  author = {Greer, Timothy and Shi, Xuan and Ma, Benjamin and Narayanan, Shrikanth},
+@inproceedings{baruah2023character,
+  title = {Character Coreference Resolution in Movie Screenplays},
+  author = {Sabyasachee Baruah and Shrikanth Narayanan},
+  year = {2023},
+  date = {2023-01-01},
+  urldate = {2023-01-01},
+  booktitle = {Findings of the Association for Computational Linguistics: ACL 2023},
+  pages = {10300--10313},
+  abstract = {Movie screenplays have a distinct narrative structure. It segments the story into scenes containing interleaving descriptions of actions, locations, and character dialogues. A typical screenplay spans several scenes and can include long-range dependencies between characters and events. A holistic document-level understanding of the screenplay requires several natural language processing capabilities, such as parsing, character identification, coreference resolution, action recognition, summarization, and attribute discovery. In this work, we develop scalable and robust methods to extract the structural information and character coreference clusters from full-length movie screenplays. We curate two datasets for screenplay parsing and character coreference— MovieParse and MovieCoref, respectively. We build a robust screenplay parser to handle inconsistencies in screenplay formatting and leverage the parsed output to link co-referring character mentions. Our coreference models can scale to long screenplay documents without drastically increasing their memory footprints.},
+  keywords = {content analysis, coreference resolution, multimedia understanding},
+  pubstate = {published},
+  tppubtype = {inproceedings},
+  abbr = {ACL}
+}
+
+@article{greer2023creating,
   title = {Creating musical features using multi-faceted, multi-task encoders based on transformers},
+  author = {Timothy Greer and Xuan Shi and Benjamin Ma and Shrikanth Narayanan},
+  year = {2023},
+  date = {2023-01-01},
+  urldate = {2023-01-01},
   journal = {Scientific Reports},
   volume = {13},
   number = {1},
   pages = {10713},
-  year = {2023},
-  tags = {autoencoders, music representations, self-supervision}
+  publisher = {Nature Publishing Group UK London},
+  abstract = {Computational machine intelligence approaches have enabled a variety of music-centric technologies in support of creating, sharing and interacting with music content. A strong performance on specific downstream application tasks, such as music genre detection and music emotion recognition, is paramount to ensuring broad capabilities for computational music understanding and Music Information Retrieval. Traditional approaches have relied on supervised learning to train models to support these music-related tasks. However, such approaches require copious annotated data and still may only provide insight into one view of music—namely, that related to the specific task at hand. We present a new model for generating audio-musical features that support music understanding, leveraging self-supervision and cross-domain learning. After pre-training using masked reconstruction of musical input features using self-attention bidirectional transformers, output representations are fine-tuned using several downstream music understanding tasks. Results show that the features generated by our multi-faceted, multi-task, music transformer model, which we call M3BERT, tend to outperform other audio and music embeddings on several diverse music-related tasks, indicating the potential of self-supervised and semi-supervised learning approaches toward a more generalized and robust computational approach to modeling music. Our work can offer a starting point for many music-related modeling tasks, with potential applications in learning deep representations and enabling robust technology applications.},
+  keywords = {autoencoders, music representations, self-supervision},
+  pubstate = {published},
+  tppubtype = {article}
 }
-
-@article{Martinez2022GenderedActions,
-  author = {Martinez, Victor and Somandepalli, Krishna and Narayanan, Shrikanth},
-  title = {Boys don’t cry (or kiss or dance): A computational linguistic lens into gendered actions in film},
-  journal = {PLoS One},
-  year = {2022},
-  tags = {gendered analysis, multimedia understanding, semantic role labeling}
+@article{Martinez2022,
+title = {Boys don’t cry (or kiss or dance): A computational linguistic lens into gendered actions in film},
+author = {Victor Martinez and Krishna Somandepalli and Shrikanth Narayanan},
+year = {2022},
+date = {2022-12-20},
+urldate = {2022-12-20},
+journal = {PLoS One},
+abstract = { },
+keywords = {gendered analysis, multimedia understanding, semantic role labeling},
+pubstate = {published},
+tppubtype = {article}
 }
-
-@article{Sharma2022CrossModal,
-  author = {Sharma, Rahul and Somandepalli, Krishna and Narayanan, Shrikanth},
-  title = {Cross modal video representations for weakly supervised active speaker localization},
-  journal = {IEEE Transactions on Multimedia},
-  volume = {Early Access},
-  pages = {1--12},
-  year = {2022},
-  doi = {https://ieeexplore.ieee.org/document/9991097},
-  tags = {active speaker localization, cross-modal learning, multiple instance learning, weakly supervised learning}
+@article{Sharma2022,
+title = {Cross modal video representations for weakly supervised active speaker localization},
+author = {Rahul Sharma and Krishna Somandepalli and Shrikanth Narayanan},
+url = {https://ieeexplore.ieee.org/document/9991097},
+doi = {10.1109/TMM.2022.3229975},
+year = {2022},
+date = {2022-12-16},
+urldate = {2022-12-16},
+journal = {IEEE Transactions on Multimedia},
+volume = {Early Access},
+pages = {1-12},
+abstract = {An objective understanding of media depictions, such as inclusive portrayals of how much someone is heard and seen on screen such as in film and television, requires the machines to discern automatically who, when, how, and where someone is talking, and not. Speaker activity can be automatically discerned from the rich multimodal information present in the media content. This is however a challenging problem due to the vast variety and contextual variability in media content, and the lack of labeled data. In this work, we present a cross-modal neural network for learning visual representations, which have implicit information pertaining to the spatial location of a speaker in the visual frames. Avoiding the need for manual annotations for active speakers in visual frames, acquiring of which is very expensive, we present a weakly supervised system for the task of localizing active speakers in movie content. We use the learned cross-modal visual representations, and provide weak supervision from movie subtitles acting as a proxy for voice activity, thus requiring no manual annotations. Furthermore, we propose an audio-assisted post-processing formulation for the task of active speaker detection. We evaluate the performance of the proposed system on three benchmark datasets: i) AVA active speaker dataset, ii) Visual person clustering dataset, and iii) Columbia datset, and demonstrate the effectiveness of the cross-modal embeddings for localizing active speakers in comparison to fully supervised systems.},
+keywords = {active speaker localization, cross-modal learning, multiple instance learning, weakly supervised learning},
+pubstate = {published},
+tppubtype = {article}
 }
-
-@inproceedings{Bose2022MovieCLIP,
-  author = {Bose, Digbalay and Hebbar, Rajat and Somandepalli, Krishna and Zhang, Haoyang and Cui, Yin and Cole-McLaughlin, Kree and Wang, Huisheng and Narayanan, Shrikanth},
-  title = {MovieCLIP: Visual Scene Recognition in Movies},
-  booktitle = {IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)},
-  year = {2022},
-  abbr = {WACV},
-  doi = {https://arxiv.org/abs/2210.11065},
-  tags = {taxonomy curation, visual scene recognition}
+@conference{bose-etal-2022-visual-scene,
+title = {MovieCLIP: Visual Scene Recognition in Movies},
+author = {Digbalay Bose and Rajat Hebbar and Krishna Somandepalli and Haoyang Zhang and Yin Cui and Kree Cole-McLaughlin and Huisheng Wang and Shrikanth Narayanan},
+url = {https://arxiv.org/abs/2210.11065},
+year = {2022},
+date = {2022-10-23},
+urldate = {2022-10-23},
+publisher = {IEEE/CVF Winter Conference on Applications of Computer Vision (WACV 2023)},
+abstract = {Longform media such as movies have complex narrative structures, with events spanning a rich variety of ambient visual scenes. Domain-specific challenges associated with visual scenes in movies include transitions, person coverage, and a wide array of real-life and fictional scenarios. Existing visual scene datasets in movies have limited taxonomies and don't consider the visual scene transition within movie clips. In this work, we address the problem of visual scene recognition in movies by first automatically curating a new and extensive movie-centric taxonomy of 179 scene labels derived from movie scripts and auxiliary web-based video datasets. Instead of manual annotations which can be expensive, we use CLIP to weakly label 1.12 million shots from 32K movie clips based on our proposed taxonomy. We provide baseline visual models trained on the weakly labeled dataset called MovieCLIP and evaluate them on an independent dataset verified by human raters. We show that leveraging features from models pretrained on MovieCLIP benefits downstream tasks such as multi-label scene and genre classification of web videos and movie trailers.},
+keywords = {taxonomy curation, visual scene recognition},
+pubstate = {published},
+tppubtype = {conference}
 }
-
-@article{Toth2022BehavioralDifferences,
-  author = {Tóth, Gábor Mihály and Hempel, Tim and Somandepalli, Krishna and Narayanan, Shrikanth},
-  title = {Studying Large-Scale Behavioral Differences in Auschwitz-Birkenau with Simulation of Gendered Narratives},
-  journal = {Digital Humanities Quarterly},
-  volume = {16},
-  number = {3},
-  year = {2022},
-  url = {http://www.digitalhumanities.org/dhq/vol/16/3/000622/000622.html},
-  tags = {Auschwitz, computational narrative modeling, survivor testimonies}
+@article{Tóth2022,
+title = {Studying Large-Scale Behavioral Differences in Auschwitz-Birkenau with Simulation of Gendered Narratives},
+author = {Gábor Mihály Tóth and Tim Hempel and Krishna Somandepalli and Shrikanth Narayanan},
+url = {http://www.digitalhumanities.org/dhq/vol/16/3/000622/000622.html},
+year = {2022},
+date = {2022-08-29},
+urldate = {2022-08-29},
+journal = {Digital Humanities Quarterly},
+volume = {16},
+number = {3},
+abstract = {In Auschwitz-Birkenau men and women were detained separately; anecdotal evidence suggests that they behaved differently. However, producing evidence based insights into victims' behavior is challenging. Perpetrators frequently destroyed camp documentations; victims' perspective remains dispersed in thousands of oral history interviews with survivors. Listening to, watching, or reading these thousands of interviews is not viable, and there is no established computational approach to gather systematic evidence from a large number of interviews. In this study, by applying methods and concepts of molecular physics, we developed a conceptual framework and computational approach to study thousands of human stories and we investigated 6628 interviews by survivors of the Auschwitz-Birkenau death camp. We applied the concept of state space and the Markov State Model to model the ensemble of 6628 testimonies. The Markov State Model along with the Transition Path Theory allowed us to compare the way women and men remember their time in the camp. We found that acts of solidarity and social bonds are the most important topics in their testimonies. However, we found that women are much more likely to address these topics. We provide systematic evidence that not only were women more likely to recall solidarity and social relations in their belated testimonies but they were also more likely to perform acts of solidarity and form social bonds in Auschwitz-Birkenau. Oral history interviews with Holocaust survivors constitute an important digital cultural heritage that documents one of the darkest moments in human history; generally, oral history collections are ubiquitous sources of modern history and significant assets of libraries and archives. We anticipate that our conceptual and computational framework will contribute not only to the understanding of gender behavior but also to the exploration of oral history as a cultural heritage, as well as to the computational study of narratives. This paper presents novel synergies between history, computer science, and physics, and it aims to stimulate further collaborations between these fields.},
+keywords = {Auschwitz, computational narrative modeling, survivor testimonies},
+pubstate = {published},
+tppubtype = {article}
 }
-
-@article{Baruah2022Professions,
-  author = {Baruah, Sabyasachee and Somandepalli, Krishna and Narayanan, Shrikanth},
-  title = {Representation of professions in entertainment media: Insights into frequency and sentiment trends through computational text analysis},
-  journal = {PLoS ONE},
-  year = {2022},
-  url = {https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0267812},
-  tags = {Media, Professions}
+@article{baruah2021representation,
+title = {Representation of professions in entertainment media: Insights into frequency and sentiment trends through computational text analysis},
+author = {Sabyasachee Baruah and Krishna Somandepalli and Shrikanth Narayanan},
+url = {https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0267812},
+year = {2022},
+date = {2022-05-18},
+journal = {PLoS ONE},
+abstract = {Societal ideas and trends dictate media narratives and cinematic depictions which in turn influence people’s beliefs and perceptions of the real world. Media portrayal of individuals and social institutions related to culture, education, government, religion, and family affect their function and evolution over time as people perceive and incorporate the representations from portrayals into their everyday lives. It is important to study media depictions of social structures so that they do not propagate or reinforce negative stereotypes, or discriminate against a particular section of the society. In this work, we examine media representation of different professions and provide computational insights into their incidence, and sentiment expressed, in entertainment media content. We create a searchable taxonomy of professional groups, synsets, and titles to facilitate their retrieval from short-context speaker-agnostic text passages like movie and television (TV) show subtitles. We leverage this taxonomy and relevant natural language processing models to create a corpus of professional mentions in media content, spanning more than 136,000 IMDb titles over seven decades (1950-2017). We analyze the frequency and sentiment trends of different occupations, study the effect of media attributes such as genre, country of production, and title type on these trends, and investigate whether the incidence of professions in media subtitles correlate with their real-world employment statistics. We observe increased media mentions over time of STEM, arts, sports, and entertainment occupations in the analyzed subtitles, and a decreased frequency of manual labor jobs and military occupations. The sentiment expressed toward lawyers, police, and doctors showed increasing negative trends over time, whereas the mentions about astronauts, musicians, singers, and engineers appear more favorably. We found that genre is a good predictor of the type of professions mentioned in movies and TV shows. Professions that employ more people showed increased media frequency.},
+keywords = {Media, Professions},
+pubstate = {published},
+tppubtype = {article}
 }
-
-@inproceedings{Baruah2021Coreference,
-  author = {Baruah, Sabyasachee and Chakravarthula, Sandeep Nallan and Narayanan, Shrikanth},
-  title = {Annotation and Evaluation of Coreference Resolution in Screenplays},
-  booktitle = {Association for Computational Linguistics},
-  pages = {2004--2010},
-  year = {2021},
-  abbr = {ACL},
-  doi = {10.18653/v1/2021.findings-acl.176},
-  tags = {coreference resolution}
+@inproceedings{baruah-etal-2021-annotation,
+title = {Annotation and Evaluation of Coreference Resolution in Screenplays},
+author = {Sabyasachee Baruah and Sandeep Nallan Chakravarthula and Shrikanth Narayanan},
+doi = {10.18653/v1/2021.findings-acl.176},
+year = {2021},
+date = {2021-08-02},
+pages = {2004–2010},
+publisher = {Association for Computational Linguistics},
+abstract = {Screenplays refer to characters using different names, pronouns, and nominal expressions. We need to resolve these mentions to
+the correct referent character for better story understanding and holistic research in computational narratology. Coreference resolution of character mentions in screenplays becomes
+challenging because of the large document lengths, unique structural features like scene headers, interleaving of action and speech
+passages, and reliance on the accompanying video. In this work, we first adapt widely used annotation guidelines to address domain-specific issues in screenplays. We develop an automatic screenplay parser to extract the
+structural information and design coreference rules based upon the structure. Our model exploits these structural features and outperforms a benchmark coreference model on the
+screenplay coreference resolution task.},
+keywords = {coreference resolution},
+pubstate = {published},
+tppubtype = {inproceedings}
 }
-
-@article{Somandepalli2021MultiFace,
-  author = {Somandepalli, Krishna and Hebbar, Rajat and Narayanan, Shrikanth},
-  title = {Multi-Face: Self-supervised Multiview Adaptation for Robust Face Clustering in Videos},
-  journal = {IEEE Transactions on Multimedia},
-  year = {2021},
-  issn = {1520-9210},
-  doi = {10.1109/TMM.2021.3096155},
-  tags = {}
+@article{Somandepalli2020MultiFaceSM,
+title = {Multi-Face: Self-supervised Multiview Adaptation for Robust Face Clustering in Videos},
+author = {Krishna Somandepalli and Rajat Hebbar and Shrikanth S Narayanan},
+doi = {10.1109/TMM.2021.3096155},
+issn = {1520-9210},
+year = {2021},
+date = {2021-07-09},
+journal = {IEEE Transactions on Multimedia},
+abstract = {Robust face clustering is a vital step in enabling a computational understanding of visual character portrayal in media. Face clustering for long-form content such as movies is challenging because of variations in appearance and lack of large-scale labeled data resources. Our work focuses on two key aspects of this problem: the lack of domain-specific training or benchmark datasets and adapting face embeddings learned on web images to the domain of movie videos. First, we curated over 169,000 face tracks from 240 Hollywood movies with weak labels on whether a pair of face tracks belong to the same or different characters. We proposed an offline nearest-neighbor search in the embedding space to mine hard-examples from these tracks. We then explored triplet-loss and multiview correlation-based methods for adapting face image embeddings to hard-examples from movie videos. We also developed SAIL-Movie Character Benchmark corpus to augment existing benchmarks with more racially diverse characters and provided face-quality labels for subsequent error analysis. Our experimental results highlight the use of weakly labeled data for domain-specific feature adaptation. Overall, we found that multiview correlation-based adaptation yielded robust and more discriminative face embeddings. Its performance on downstream face verification and clustering tasks was comparable to that of the state-of-the-art results in this domain. We hope that the large-scale datasets developed in this work can further advance automatic character labeling in videos. All resources are available at https://sail.usc.edu/~ccmi/multiface.},
+keywords = {},
+pubstate = {published},
+tppubtype = {article}
 }
-
-@article{Somandepalli2021RobustCharacterLabeling,
-  author = {Somandepalli, Krishna and Hebbar, Rajat and Narayanan, Shrikanth},
-  title = {Robust Character Labeling in Movie Videos: Data Resources and Self-supervised Feature Adaptation},
-  journal = {IEEE Transactions on Multimedia},
-  volume = {24},
-  pages = {3355--3368},
-  year = {2021},
-  url = {https://sail.usc.edu/publications/files/Somandepalli-TMM2021.pdf},
-  doi = {10.1109/TMM.2021.3096155},
-  tags = {computational media understanding, face clustering, face diarization, multiview correlation, self-supervision, triplet loss, video character labeling}
+@article{Somandepalli2021b,
+title = {Robust Character Labeling in Movie Videos: Data Resources and Self-supervised Feature Adaptation.},
+author = {Krishna Somandepalli and Rajat Hebbar and Shrikanth Narayanan},
+url = {https://sail.usc.edu/publications/files/Somandepalli-TMM2021.pdf},
+doi = {10.1109/TMM.2021.3096155},
+year = {2021},
+date = {2021-07-09},
+urldate = {2021-07-09},
+journal = {IEEE Transactions on Multimedia},
+volume = {24},
+pages = {3355 - 3368},
+abstract = {Robust face clustering is a vital step in enabling computational understanding of visual character portrayal in media. Face clustering for long-form content is challenging because of variations in appearance and lack of supporting large-scale labeled data. Our work in this paper focuses on two key aspects of this problem: the lack of domain-specific training or benchmark datasets, and adapting face embeddings learned on web images to long-form content, specifically movies. First, we present a dataset of over 169000 face tracks curated from 240 Hollywood movies with weak labels on whether a pair of face tracks belong to the same or a different character. We propose an offline algorithm based on nearest-neighbor search in the embedding space to mine hard-examples from these tracks. We then investigate triplet-loss and multiview correlation-based methods for adapting face embeddings to hard-examples. Our experimental results highlight the usefulness of weakly labeled data for domain-specific feature adaptation. Overall, we find that multiview correlation-based adaptation yields more discriminative and robust face embeddings. Its performance on downstream face verification and clustering tasks is comparable to that of the state-of-the-art results in this domain. We also present the SAIL-Movie Character Benchmark corpus developed to augment existing benchmarks. It consists of racially diverse actors and provides face-quality labels for subsequent error analysis. We hope that the large-scale datasets developed in this work can further advance automatic character labeling in videos. All resources are available freely at https://sail.usc.edu/~ccmi/multiface .
+},
+keywords = {computational media understanding, face clustering, face diarization, multiview correlation, self-supervision, triplet loss, video character labeling},
+pubstate = {published},
+tppubtype = {article}
 }
-
-@inproceedings{Hebbar2021VocalParticipation,
-  author = {Hebbar, Rajat and Somandepalli, Krishna and Peri, Raghuveer and Travadi, Ruchir and Tuplin, Tracy and Rivera, Fernando and Narayanan, Shrikanth},
-  title = {A Computational Tool to
-
- Study Vocal Participation of Women in UN-ITU Meetings},
-  booktitle = {2021 International Conference on Content-Based Multimedia Indexing (CBMI)},
-  pages = {1--4},
-  year = {2021},
-  abbr = {CBMI},
-  tags = {}
+@inproceedings{hebbar2021computational,
+title = {A Computational Tool to Study Vocal Participation of Women in UN-ITU Meetings},
+author = {Rajat Hebbar and Krishna Somandepalli and Raghuveer Peri and Ruchir Travadi and Tracy Tuplin and Fernando Rivera and Shrikanth Narayanan},
+year = {2021},
+date = {2021-01-01},
+booktitle = {2021 International Conference on Content-Based Multimedia Indexing (CBMI)},
+pages = {1--4},
+organization = {IEEE},
+keywords = {},
+pubstate = {published},
+tppubtype = {inproceedings}
 }
-
-@inproceedings{Knox2021LossFunction,
-  author = {Knox, Dillon and Greer, Timothy and Ma, Benjamin and Kuo, Emily and Somandepalli, Krishna and Narayanan, Shrikanth},
-  title = {Loss Function Approaches for Multi-label Music Tagging},
-  booktitle = {2021 International Conference on Content-Based Multimedia Indexing (CBMI)},
-  pages = {1--4},
-  year = {2021},
-  abbr = {CBMI},
-  tags = {}
+@inproceedings{knox2021loss,
+title = {Loss Function Approaches for Multi-label Music Tagging},
+author = {Dillon Knox and Timothy Greer and Benjamin Ma and Emily Kuo and Krishna Somandepalli and Shrikanth Narayanan},
+year = {2021},
+date = {2021-01-01},
+booktitle = {2021 International Conference on Content-Based Multimedia Indexing (CBMI)},
+pages = {1--4},
+organization = {IEEE},
+keywords = {},
+pubstate = {published},
+tppubtype = {inproceedings}
 }
-
-@article{Ma2021MusicCharacterizesGenre,
-  author = {Ma, Benjamin and Greer, Timothy and Knox, Dillon and Narayanan, Shrikanth},
-  title = {A computational lens into how music characterizes genre in film},
-  journal = {PloS one},
-  volume = {16},
-  number = {4},
-  pages = {e0249957},
-  year = {2021},
-  tags = {}
+@article{ma2021computational,
+title = {A computational lens into how music characterizes genre in film},
+author = {Benjamin Ma and Timothy Greer and Dillon Knox and Shrikanth Narayanan},
+year = {2021},
+date = {2021-01-01},
+journal = {PloS one},
+volume = {16},
+number = {4},
+pages = {e0249957},
+publisher = {Public Library of Science San Francisco, CA USA},
+keywords = {},
+pubstate = {published},
+tppubtype = {article}
 }
-
-@article{Somandepalli2021MediaIntelligence,
-  author = {Somandepalli, Krishna and Guha, Tanaya and Martinez, Victor R and Kumar, Naveen and Adam, Hartwig and Narayanan, Shrikanth},
-  title = {Computational media intelligence: human-centered machine analysis of media},
-  journal = {Proceedings of the IEEE},
-  year = {2021},
-  tags = {}
+@article{somandepalli2021computational,
+title = {Computational media intelligence: human-centered machine analysis of media},
+author = {Krishna Somandepalli and Tanaya Guha and Victor R Martinez and Naveen Kumar and Hartwig Adam and Shrikanth Narayanan},
+year = {2021},
+date = {2021-01-01},
+journal = {Proceedings of the IEEE},
+publisher = {IEEE},
+keywords = {},
+pubstate = {published},
+tppubtype = {article}
 }
-
-@inproceedings{Martinez2020RiskBehavior,
-  author = {Martinez, Victor and Somandepalli, Krishna and Tehranian-Uhls, Yalda and Narayanan, Shrikanth},
-  title = {Joint Estimation and Analysis of Risk Behavior Ratings in Movie Scripts},
-  booktitle = {Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP)},
-  pages = {4780--4790},
-  year = {2020},
-  abbr = {EMNLP},
-  tags = {}
+@inproceedings{martinez2020joint,
+title = {Joint Estimation and Analysis of Risk Behavior Ratings in Movie Scripts},
+author = {Victor Martinez and Krishna Somandepalli and Yalda Tehranian-Uhls and Shrikanth Narayanan},
+year = {2020},
+date = {2020-01-01},
+booktitle = {Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP)},
+pages = {4780--4790},
+keywords = {},
+pubstate = {published},
+tppubtype = {inproceedings}
 }
-
-@article{Ramakrishna2020JointModel,
-  author = {Ramakrishna, Anil Kumar and Gupta, Rahul and Narayanan, Shrikanth},
-  title = {Joint Multi-Dimensional Model for Global and Time-Series Annotations},
-  journal = {IEEE Transactions on Affective Computing},
-  year = {2020},
-  tags = {}
+@article{ramakrishna2020joint,
+title = {Joint Multi-Dimensional Model for Global and Time-Series Annotations},
+author = {Anil Kumar Ramakrishna and Rahul Gupta and Shrikanth Narayanan},
+year = {2020},
+date = {2020-01-01},
+journal = {IEEE Transactions on Affective Computing},
+publisher = {IEEE},
+keywords = {},
+pubstate = {published},
+tppubtype = {article}
 }
-
-@article{Narayanan2020HumanCentered,
-  author = {Narayanan, Shrikanth S and Madni, Asad M},
-  title = {Inclusive Human centered Machine Intelligence},
-  journal = {The Bridge},
-  volume = {50},
-  pages = {113--116},
-  year = {2020},
-  tags = {}
+@article{NarayananMadni-Bridge2020,
+title = {Inclusive Human centered Machine Intelligence},
+author = {Shrikanth S Narayanan and Asad M Madni},
+year = {2020},
+date = {2020-01-01},
+journal = {The Bridge},
+volume = {50},
+pages = {113-116},
+publisher = {National Academy of Engineering},
+keywords = {},
+pubstate = {published},
+tppubtype = {article}
 }
-
-@inproceedings{Martinez2019ViolenceRating,
-  author = {Martinez, Victor R and Somandepalli, Krishna and Singla, Karan and Ramakrishna, Anil and Uhls, Yalda T and Narayanan, Shrikanth},
-  title = {Violence rating prediction from movie scripts},
-  booktitle = {Proceedings of the AAAI Conference on Artificial Intelligence},
-  pages = {671--678},
-  year = {2019},
-  abbr = {AAAI},
-  tags = {}
+@inproceedings{martinez2019violence,
+title = {Violence rating prediction from movie scripts},
+author = {Victor R Martinez and Krishna Somandepalli and Karan Singla and Anil Ramakrishna and Yalda T Uhls and Shrikanth Narayanan},
+year = {2019},
+date = {2019-01-01},
+booktitle = {Proceedings of the AAAI Conference on Artificial Intelligence},
+volume = {33},
+number = {01},
+pages = {671--678},
+keywords = {},
+pubstate = {published},
+tppubtype = {inproceedings}
 }
-
-@inproceedings{Sharma2019VisualVoice,
-  author = {Sharma, Rahul and Somandepalli, Krishna and Narayanan, Shrikanth},
-  title = {Toward visual voice activity detection for unconstrained videos},
-  booktitle = {2019 IEEE International Conference on Image Processing (ICIP)},
-  pages = {2991--2995},
-  year = {2019},
-  abbr = {ICIP},
-  tags = {}
+@inproceedings{sharma2019toward,
+title = {Toward visual voice activity detection for unconstrained videos},
+author = {Rahul Sharma and Krishna Somandepalli and Shrikanth Narayanan},
+year = {2019},
+date = {2019-01-01},
+booktitle = {2019 IEEE International Conference on Image Processing (ICIP)},
+pages = {2991--2995},
+organization = {IEEE},
+keywords = {},
+pubstate = {published},
+tppubtype = {inproceedings}
 }
-
-@inproceedings{Hebbar2019SpeechActivity,
-  author = {Hebbar, Rajat and Somandepalli, Krishna and Narayanan, Shrikanth},
-  title = {Robust speech activity detection in movie audio: Data resources and experimental evaluation},
-  booktitle = {ICASSP 2019-2019 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
-  pages = {4105--4109},
-  year = {2019},
-  abbr = {ICASSP},
-  tags = {}
+@inproceedings{hebbar2019robust,
+title = {Robust speech activity detection in movie audio: Data resources and experimental evaluation},
+author = {Rajat Hebbar and Krishna Somandepalli and Shrikanth Narayanan},
+year = {2019},
+date = {2019-01-01},
+booktitle = {ICASSP 2019-2019 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
+pages = {4105--4109},
+organization = {IEEE},
+keywords = {},
+pubstate = {published},
+tppubtype = {inproceedings}
 }
-
-@inproceedings{Somandepalli2019Reinforcing,
-  author = {Somandepalli, Krishna and Narayanan, Shrikanth},
-  title = {Reinforcing self-expressive representation with constraint propagation for face clustering in movies},
-  booktitle = {ICASSP 2019-2019 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
-  pages = {4065--4069},
-  year = {2019},
-  abbr = {ICASSP},
-  tags = {}
+@inproceedings{somandepalli2019reinforcing,
+title = {Reinforcing self-expressive representation with constraint propagation for face clustering in movies},
+author = {Krishna Somandepalli and Shrikanth Narayanan},
+year = {2019},
+date = {2019-01-01},
+booktitle = {ICASSP 2019-2019 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
+pages = {4065--4069},
+organization = {IEEE},
+keywords = {},
+pubstate = {published},
+tppubtype = {inproceedings}
 }
-
-@article{Somandepalli2019MultimodalRepresentation,
-  author = {Somandepalli, Krishna and Kumar, Naveen and Travadi, Ruchir and Narayanan, Shrikanth},
-  title = {Multimodal representation learning using deep multiset canonical correlation},
-  journal = {arXiv preprint arXiv:1904.01775},
-  year = {2019},
-  tags = {}
+@article{somandepalli2019multimodal,
+title = {Multimodal representation learning using deep multiset canonical correlation},
+author = {Krishna Somandepalli and Naveen Kumar and Ruchir Travadi and Shrikanth Narayanan},
+year = {2019},
+date = {2019-01-01},
+journal = {arXiv preprint arXiv:1904.01775},
+keywords = {},
+pubstate = {published},
+tppubtype = {article}
 }
-
-@inproceedings{Somandepalli2018Advertisements,
-  author = {Somandepalli, Krishna and Martinez, Victor and Kumar, Naveen and Narayanan, Shrikanth},
-  title = {Multimodal Representation of Advertisements Using Segment-Level Autoencoders},
-  booktitle = {Proceedings of the 20th ACM International Conference on Multimodal Interaction},
-  pages = {418--422},
-  year = {2018},
-  abbr = {ICMI},
-  tags = {advertisements, autoencoders, multimodal joint representation}
+@inproceedings{10.1145/3242969.3243026,
+title = {Multimodal Representation of Advertisements Using Segment-Level Autoencoders},
+author = {Krishna Somandepalli and Victor Martinez and Naveen Kumar and Shrikanth Narayanan},
+url = {https://doi.org/10.1145/3242969.3243026},
+doi = {10.1145/3242969.3243026},
+isbn = {9781450356923},
+year = {2018},
+date = {2018-01-01},
+booktitle = {Proceedings of the 20th ACM International Conference on Multimodal Interaction},
+pages = {418–422},
+publisher = {Association for Computing Machinery},
+address = {Boulder, CO, USA},
+series = {ICMI '18},
+abstract = {Automatic analysis of advertisements (ads) poses an interesting problem for learning
+multimodal representations. A promising direction of research is the development of
+deep neural network autoencoders to obtain inter-modal and intra-modal representations.
+In this work, we propose a system to obtain segment-level unimodal and joint representations.
+These features are concatenated, and then averaged across the duration of an ad to
+obtain a single multimodal representation. The autoencoders are trained using segments
+generated by time-aligning frames between the audio and video modalities with forward
+and backward context. In order to assess the multimodal representations, we consider
+the tasks of classifying an ad as funny or exciting in a publicly available dataset
+of 2,720 ads. For this purpose we train the segment-level autoencoders on a larger,
+unlabeled dataset of 9,740 ads, agnostic of the test set. Our experiments show that:
+1) the multimodal representations outperform joint and unimodal representations, 2)
+the different representations we learn are complementary to each other, and 3) the
+segment-level multimodal representations perform better than classical autoencoders
+and cross-modal representations -- within the context of the two classification tasks.
+We obtain an improvement of about 5% in classification accuracy compared to a competitive
+baseline.},
+keywords = {advertisements, autoencoders, multimodal joint representation},
+pubstate = {published},
+tppubtype = {inproceedings}
 }
-
-@inproceedings{Hebbar2018GenderIdentification,
-  author = {Hebbar, Rajat and Somandepalli, Krishna and Narayanan, Shrikanth},
-  title = {Improving Gender Identification in Movie Audio Using Cross-Domain Data},
-  booktitle = {Proc. Interspeech},
-  pages = {282--286},
-  year = {2018},
-  abbr = {Interspeech},
-  tags = {}
+@inproceedings{hebbar18_interspeech,
+title = {Improving Gender Identification in Movie Audio Using Cross-Domain Data},
+author = {Rajat Hebbar and Krishna Somandepalli and Shrikanth Narayanan},
+doi = {10.21437/Interspeech.2018-1462},
+year = {2018},
+date = {2018-01-01},
+booktitle = {Proc. Interspeech 2018},
+pages = {282--286},
+keywords = {},
+pubstate = {published},
+tppubtype = {inproceedings}
 }
-
-@article{Somandepalli2018CharacterDictionaries,
-  author = {Somandepalli, Krishna and Kumar, Naveen and Guha, Tanaya and Narayanan, Shrikanth S},
-  title = {Unsupervised Discovery of Character Dictionaries in Animation Movies},
-  journal = {IEEE Transactions on Multimedia},
-  volume = {20},
-  number = {3},
-  pages = {539--551},
-  year = {2018},
-  tags = {}
+@article{8017484,
+title = {Unsupervised Discovery of Character Dictionaries in Animation Movies},
+author = {Krishna Somandepalli and Naveen Kumar and Tanaya Guha and Shrikanth S Narayanan},
+doi = {10.1109/TMM.2017.2745712},
+year = {2018},
+date = {2018-01-01},
+journal = {IEEE Transactions on Multimedia},
+volume = {20},
+number = {3},
+pages = {539-551},
+keywords = {},
+pubstate = {published},
+tppubtype = {article}
 }
-
-@inproceedings{Ramakrishna2017LinguisticAnalysis,
-  author = {Ramakrishna, Anil and Martinez, Victor R and Malandrakis, Nikolaos and Singla, Karan and Narayanan, Shrikanth},
-  title = {Linguistic analysis of differences in portrayal of movie characters},
-  booktitle = {Proceedings of the 55th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)},
-  pages = {1669--1678},
-  year = {2017},
-  abbr = {ACL},
-  tags = {}
+@inproceedings{ramakrishna-etal-2017-linguistic,
+title = {Linguistic analysis of differences in portrayal of movie characters},
+author = {Anil Ramakrishna and Victor R Martinez and Nikolaos Malandrakis and Karan Singla and Shrikanth Narayanan},
+url = {https://aclanthology.org/P17-1153},
+doi = {10.18653/v1/P17-1153},
+year = {2017},
+date = {2017-01-01},
+urldate = {2017-01-01},
+booktitle = {Proceedings of the 55th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)},
+pages = {1669--1678},
+address = {Vancouver, Canada},
+abstract = {We examine differences in portrayal of characters in movies using psycholinguistic and graph theoretic measures computed directly from screenplays. Differences are examined with respect to characters' gender, race, age and other metadata. Psycholinguistic metrics are extrapolated to dialogues in movies using a linear regression model built on a set of manually annotated seed words. Interesting patterns are revealed about relationships between genders of production team and the gender ratio of characters. Several correlations are noted between gender, race, age of characters and the linguistic metrics.},
+keywords = {},
+pubstate = {published},
+tppubtype = {inproceedings}
 }
-
-@inproceedings{Tadimari2016BoxOffice,
-  author = {Tadimari, Adarsh and Kumar, Naveen and Guha, Tanaya and Narayanan, Shrikanth S},
-  title = {Opening big in box office? Trailer content can help},
-  booktitle = {2016 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
-  pages = {2777--2781},
-  year = {2016},
-  abbr = {ICASSP},
-  tags = {}
+@inproceedings{7472183,
+title = {Opening big in box office? Trailer content can help},
+author = {Adarsh Tadimari and Naveen Kumar and Tanaya Guha and Shrikanth S Narayanan},
+doi = {10.1109/ICASSP.2016.7472183},
+year = {2016},
+date = {2016-01-01},
+booktitle = {2016 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
+pages = {2777-2781},
+keywords = {},
+pubstate = {published},
+tppubtype = {inproceedings}
 }
-
-@inproceedings{Nasir2016GenderClassification,
-  author = {Nasir, Md and Kumar, Naveen and Georgiou, Panayiotis and Narayanan, Shrikanth S},
-  title = {Robust Multichannel Gender Classification from Speech in Movie Audio},
-  booktitle = {Proceedings of Interspeech},
-  year = {2016},
-  abbr = {Interspeech},
-  tags = {}
+@inproceedings{Nasir2016RobustMultichannelGenderClassification,
+title = {Robust Multichannel Gender Classification from Speech in Movie Audio},
+author = {Md Nasir and Naveen Kumar and Panayiotis Georgiou and Shrikanth S Narayanan},
+doi = {10.1109/TCE.2010.5606301},
+year = {2016},
+date = {2016-01-01},
+booktitle = {Proceedings of Interspeech},
+keywords = {},
+pubstate = {published},
+tppubtype = {inproceedings}
 }
-
-@inproceedings{Goyal2016EmotionPrediction,
-  author = {Goyal, Ankit and Kumar, Naveen and Guha, Tanaya and Narayanan, Shrikanth S},
-  title = {A multimodal mixture-of-experts model for dynamic emotion prediction in movies},
-  booktitle = {2016 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
-  pages = {2822--2826},
-  year = {2016},
-  abbr = {ICASSP},
-  tags = {}
+@inproceedings{7472192,
+title = {A multimodal mixture-of-experts model for dynamic emotion prediction in movies},
+author = {Ankit Goyal and Naveen Kumar and Tanaya Guha and Shrikanth S Narayanan},
+doi = {10.1109/ICASSP.2016.7472192},
+year = {2016},
+date = {2016-01-01},
+booktitle = {2016 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
+pages = {2822-2826},
+keywords = {},
+pubstate = {published},
+tppubtype = {inproceedings}
 }
-
-@inproceedings{Guha2015Narratives,
-  author = {Guha, Tanaya and Kumar, Naveen and Narayanan, Shrikanth S and Smith, Stacy L},
-  title = {Computationally deconstructing movie narratives: An informatics approach},
-  booktitle = {2015 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
-  pages = {2264--2268},
-  year = {2015},
-  abbr = {ICASSP},
-  tags = {}
+@inproceedings{7178374,
+title = {Computationally deconstructing movie narratives: An informatics approach},
+author = {Tanaya Guha and Naveen Kumar and Shrikanth S Narayanan and Stacy L Smith},
+doi = {10.1109/ICASSP.2015.7178374},
+year = {2015},
+date = {2015-01-01},
+booktitle = {2015 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
+pages = {2264-2268},
+keywords = {},
+pubstate = {published},
+tppubtype = {inproceedings}
 }
-
-@inproceedings{Guha2015GenderRepresentation,
-  author = {Guha, Tanaya and
-
- Huang, Che-Wei and Kumar, Naveen and Zhu, Yan and Narayanan, Shrikanth S},
-  title = {Gender Representation in Cinematic Content: A Multimodal Approach},
-  booktitle = {Proceedings of the 2015 ACM on International Conference on Multimodal Interaction},
-  pages = {31--34},
-  year = {2015},
-  abbr = {ICMI},
-  tags = {content analysis, gender representation, movie, multimodal}
+@inproceedings{10.1145/2818346.2820778,
+title = {Gender Representation in Cinematic Content: A Multimodal Approach},
+author = {Tanaya Guha and Che-Wei Huang and Naveen Kumar and Yan Zhu and Shrikanth S Narayanan},
+url = {https://doi.org/10.1145/2818346.2820778},
+doi = {10.1145/2818346.2820778},
+isbn = {9781450339124},
+year = {2015},
+date = {2015-01-01},
+booktitle = {Proceedings of the 2015 ACM on International Conference on Multimodal Interaction},
+pages = {31–34},
+publisher = {Association for Computing Machinery},
+address = {Seattle, Washington, USA},
+series = {ICMI '15},
+abstract = {The goal of this paper is to enable an objective understanding of gender portrayals
+in popular films and media through multimodal content analysis. An automated system
+for analyzing gender representation in terms of screen presence and speaking time
+is developed. First, we perform independent processing of the video and the audio
+content to estimate gender distribution of screen presence at shot level, and of speech
+at utterance level. A measure of the movie's excitement or intensity is computed using
+audiovisual features for every scene. This measure is used as a weighting function
+to combine the gender-based screen/speaking time information at shot/utterance level
+to compute gender representation for the entire movie. Detailed results and analyses
+are presented on seventeen full length Hollywood movies.},
+keywords = {content analysis, gender representation, movie, multimodal},
+pubstate = {published},
+tppubtype = {inproceedings}
 }

@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://adityaashvin.github.ioccmi/sitemap.xml
+Sitemap: https://adityaashvin.github.io/ccmi/sitemap.xml

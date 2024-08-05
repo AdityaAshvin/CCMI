@@ -16,7 +16,7 @@ social: false # includes social icons at the bottom of the page
 ---
 
 <div class="jumbotron g-0 p-0 m-0 mb-4">
-  <img src="{{ site.baseurl }}/assets/img/main.png" alt="Main image" class="img-fluid">
+  <img src="{{ site.baseurl }}/assets/img/main.png" alt="Homepage image" class="img-fluid">
 </div>
 
 The Center for Computational Media Intelligence (CCMI) group is involved in developing novel computational methods to uncover elements of content impact and experience in multimodal multimedia sources from a human-centric perspective.

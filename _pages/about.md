@@ -6,7 +6,7 @@ subtitle: <a href="https://sail.usc.edu/">Signal Analysis and Interpretation Lab
 
 profile:
   align: right
-  image: homepage1.png
+  image:
   image_circular: false # crops the image to make it circular
   more_info: >
 
@@ -14,6 +14,10 @@ news: true # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: false # includes social icons at the bottom of the page
 ---
+
+<div class="jumbotron g-0 p-0 m-0 mb-4">
+  <img src="{{ site.baseurl }}/assets/img/main.png" alt="Main image" class="img-fluid">
+</div>
 
 The Center for Computational Media Intelligence (CCMI) group is involved in developing novel computational methods to uncover elements of content impact and experience in multimodal multimedia sources from a human-centric perspective.
 
@@ -23,6 +27,7 @@ Our collaborators include <a href = "https://geenadavisinstitute.org/" >Geena Da
 
 ### Our Research Directions
 
+<!--
 <div class="container">
   <div class="row text-center">
     <div class="col-md-4">
@@ -41,4 +46,9 @@ Our collaborators include <a href = "https://geenadavisinstitute.org/" >Geena Da
       <p>How do the different measures relate to the impact of movies on society and human perception in general.</p>
     </div>
   </div>
+</div>
+--->
+
+<div class="jumbotron  g-0 p-0 m-0 mt-4 mb-4">
+  <img src="{{ site.baseurl }}/assets/img/research-directions.png" alt="Research directions image" class="img-fluid">
 </div>
